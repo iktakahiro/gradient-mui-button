@@ -1,6 +1,6 @@
 {
   "name": "material-gradient-button",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "A Material-UI based modern gradient colors button component",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
@@ -19,7 +19,7 @@
     "React",
     "Material-UI"
   ],
-  "author": "iktakahiro <takahiro.ikeuchi@gmail.com>",
+  "author": "Takahiro Ikeuchi <takahiro.ikeuchi@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/iktakahiro/gradient-mui-button/issues"
