@@ -1,0 +1,54 @@
+---
+name: Button
+---
+import { Playground, Props } from 'docz'
+import ContainedButton from './ContainedButton'
+
+# Button
+
+## ContainedButton
+
+ContainedButton was created based on https://material-ui.com/components/buttons/#contained-buttons
+
+### Usage
+
+```ts
+import { ContainedButton } from 'material-gradient-button'
+```
+
+#### with Default Theme
+
+<Playground>
+  <ContainedButton color="primary">Primary</ContainedButton>
+  <ContainedButton color="secondary">Secondary</ContainedButton>
+  <ContainedButton>Default</ContainedButton>
+  <ContainedButton color="primary" disabled={true}>Disabled</ContainedButton>
+</Playground>
+
+#### with Custom Theme
+
+import { ThemeProvider } from '@material-ui/styles';
+import theme from './sample-theme'
+
+Material Gradient Button inherits a defined [custom theme](https://material-ui.com/customization/color/).
+
+```ts
+import { createMuiTheme } from '@material-ui/core/styles';
+import { teal, deepOrange } from '@material-ui/core/colors'
+
+const theme = createMuiTheme({
+  palette: {
+    primary: teal,
+    secondary: {
+      main: deepOrange[400]
+    }
+  }
+});
+```
+
+<Playground>
+  <ThemeProvider theme={theme}>
+    <ContainedButton color="primary">Primary</ContainedButton>
+    <ContainedButton color="secondary">Secondary</ContainedButton>
+  </ThemeProvider>
+</Playground>

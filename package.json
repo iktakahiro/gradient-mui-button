@@ -1,0 +1,54 @@
+{
+  "name": "material-gradient-button",
+  "version": "0.9.0",
+  "description": "A Material-UI based modern gradient colors button component",
+  "main": "src/index.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc",
+    "packages": "tsc && git add ./lib/*",
+    "lint:fix": "eslint './src/**/*.{ts,tsx}' --fix",
+    "docz:dev": "docz dev",
+    "docz:build": "docz build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iktakahiro/material-gradient-button.git"
+  },
+  "keywords": [
+    "React",
+    "Material-UI"
+  ],
+  "author": "iktakahiro <takahiro.ikeuchi@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/iktakahiro/material-gradient-button/issues"
+  },
+  "homepage": "https://github.com/iktakahiro/material-gradient-button#readme",
+  "dependencies": {
+    "@material-ui/core": "^4.2.1",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "@types/node": "^12.6.6",
+    "@types/react": "^16.8.23",
+    "@typescript-eslint/eslint-plugin": "^1.12.0",
+    "@typescript-eslint/parser": "^1.12.0",
+    "babel-loader": "^8.0.6",
+    "docz": "^1.2.0",
+    "docz-theme-default": "^1.2.0",
+    "eslint": "^5.12.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.2",
+    "husky": "^3.0.0",
+    "prettier": "^1.18.2",
+    "typescript": "^3.5.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint:fix"
+    }
+  }
+}
