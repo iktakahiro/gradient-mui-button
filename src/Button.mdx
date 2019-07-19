@@ -30,26 +30,27 @@ import { ContainedButton } from 'gradient-mui-button'
 #### with Custom Theme
 
 import { ThemeProvider } from '@material-ui/styles';
-import theme from './sample-theme'
 
 Contained Button inherits a defined [custom theme](https://material-ui.com/customization/color/).
 
 ```ts
+// additional import statements to use a theme
 import { createMuiTheme } from '@material-ui/core/styles';
 import { teal, deepOrange } from '@material-ui/core/colors'
-
-const theme = createMuiTheme({
-  palette: {
-    primary: teal,
-    secondary: {
-      main: deepOrange[400]
-    }
-  }
-});
 ```
 
+import { createMuiTheme } from '@material-ui/core/styles';
+import { teal, deepOrange } from '@material-ui/core/colors';
+
 <Playground>
-  <ThemeProvider theme={theme}>
+  <ThemeProvider theme={createMuiTheme({
+    palette: {
+      primary: teal,
+      secondary: {
+        main: deepOrange[400]
+      }
+    }
+  })}>
     <ContainedButton color="primary">Primary</ContainedButton>
     <ContainedButton color="secondary">Secondary</ContainedButton>
   </ThemeProvider>

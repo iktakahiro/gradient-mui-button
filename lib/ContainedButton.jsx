@@ -1,32 +1,27 @@
 import * as React from 'react';
-import { withStyles, Theme, WithStyles } from '@material-ui/core/styles';
+import { withStyles } from '@material-ui/core/styles';
 import { fade } from '@material-ui/core/styles/colorManipulator';
-import MuiButton, {
-  ButtonProps as MuiButtonProps
-} from '@material-ui/core/Button';
+import MuiButton from '@material-ui/core/Button';
 import purple from '@material-ui/core/colors/purple';
 import grey from '@material-ui/core/colors/grey';
-
 /**
  * makeBoxShadow makes a property for box-shadow.
  * @param color
  */
-const makeBoxShadow = (color: string): string => {
+const makeBoxShadow = color => {
   return `0 15px 25px -10px ${fade(color, 0.5)}, 
           0 5px 25px 0 ${fade(grey[400], 0.1)},
           0 10px 10px -5px ${fade(color, 0.2)}`;
 };
-
 /**
  * makeBackground makes a 'linear-gradient' property for background.
  * @param color1
  * @param color2
  */
-const makeBackground = (color1: string, color2: string): string => {
+const makeBackground = (color1, color2) => {
   return `linear-gradient(60deg, ${color1} 35%, ${color2} 95%)`;
 };
-
-const styles = (theme: Theme) => ({
+const styles = theme => ({
   root: {
     border: 0,
     borderRadius: 30,
@@ -65,13 +60,7 @@ const styles = (theme: Theme) => ({
     boxShadow: makeBoxShadow(theme.palette.secondary.light)
   }
 });
-
-const ContainedButton: React.FC<MuiButtonProps & WithStyles> = ({
-  classes,
-  color,
-  children,
-  ...others
-}) => {
+const ContainedButton = ({ classes, color, children, ...others }) => {
   let classNames = classes.root;
   if (color !== undefined) {
     switch (color) {
@@ -91,5 +80,4 @@ const ContainedButton: React.FC<MuiButtonProps & WithStyles> = ({
     </MuiButton>
   );
 };
-
 export default withStyles(styles)(ContainedButton);

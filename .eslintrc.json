@@ -21,6 +21,12 @@
     "react/prop-types": 0, // [0, { "ignore": ["children"] }],
     "@typescript-eslint/explicit-function-return-type": [0, {
       "allowTypedFunctionExpressions": true
-    }]
+    }],
+    "@typescript-eslint/no-explicit-any" : 0
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   }
 }
