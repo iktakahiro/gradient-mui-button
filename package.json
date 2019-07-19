@@ -7,8 +7,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "tsc": "tsc",
-    "package": "tsc && git add ./lib/*",
-    "lint:fix": "eslint './src/**/*.{ts,tsx}' --fix",
+    "lint:fix": "eslint './{lib,src}/**/*.{ts,tsx,js,jsx}' --fix",
     "docz:dev": "docz dev",
     "docz:build": "docz build"
   },
@@ -49,7 +48,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint:fix && npm run package"
+      "pre-commit": "npm run tsc && npm run lint:fix && git add ./lib/*"
     }
   }
 }
