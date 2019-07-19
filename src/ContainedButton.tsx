@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { withStyles, Theme, WithStyles } from '@material-ui/core/styles';
 import { fade } from '@material-ui/core/styles/colorManipulator';
 import MuiButton, {
