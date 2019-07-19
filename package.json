@@ -13,7 +13,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iktakahiro/material-gradient-button.git"
+    "url": "git+https://github.com/iktakahiro/gradient-mui-button.git"
   },
   "keywords": [
     "React",
@@ -22,9 +22,9 @@
   "author": "iktakahiro <takahiro.ikeuchi@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/iktakahiro/material-gradient-button/issues"
+    "url": "https://github.com/iktakahiro/gradient-mui-button/issues"
   },
-  "homepage": "https://github.com/iktakahiro/material-gradient-button#readme",
+  "homepage": "https://github.com/iktakahiro/gradient-mui-button#readme",
   "dependencies": {
     "@material-ui/core": "^4.2.1",
     "react": "^16.8.6",
