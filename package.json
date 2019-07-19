@@ -1,13 +1,13 @@
 {
   "name": "material-gradient-button",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "description": "A Material-UI based modern gradient colors button component",
-  "main": "src/index.ts",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "tsc": "tsc",
-    "packages": "tsc && git add ./lib/*",
-    "lint:fix": "eslint './src/**/*.{ts,tsx}' --fix",
+    "lint:fix": "eslint './{lib,src}/**/*.{ts,tsx,js,jsx}' --fix",
     "docz:dev": "docz dev",
     "docz:build": "docz build"
   },
@@ -19,7 +19,7 @@
     "React",
     "Material-UI"
   ],
-  "author": "iktakahiro <takahiro.ikeuchi@gmail.com>",
+  "author": "Takahiro Ikeuchi <takahiro.ikeuchi@gmail.com>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/iktakahiro/gradient-mui-button/issues"
@@ -48,7 +48,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm run lint:fix"
+      "pre-commit": "npm run tsc && npm run lint:fix && git add ./lib/*"
     }
   }
 }

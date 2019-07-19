@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "allowJs": true,
     "alwaysStrict": true,
     "esModuleInterop": true,
     "isolatedModules": false,
@@ -10,23 +9,25 @@
       "es2017"
     ],
     "module": "esnext",
+    "declaration": true,
+    "outDir": "./lib",
     "moduleResolution": "node",
-    "noEmit": true,
     "noFallthroughCasesInSwitch": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "noImplicitAny": false,
     "strict": true,
     "target": "esnext",
     "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true,
-    "resolveJsonModule": true
+    "forceConsistentCasingInFileNames": true
   },
-  "exclude": [
-    "node_modules"
-  ],
   "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx",
+    "src/**/*.ts",
+    "src/**/*.tsx"
+  ],
+  "exclude": [
+    "node_modules",
+    "lib",
+    "src/sample-theme.ts",
   ]
 }
