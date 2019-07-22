@@ -19,7 +19,7 @@ yarn add '@iktakahiro/gradient-mui-button'
 ## Usage
 
 ```tsx
-import { ContainedButton } from 'gradient-mui-button'
+import { ContainedButton } from '@iktakahiro/gradient-mui-button'
 
 const MyComponent = () => {
     return (
