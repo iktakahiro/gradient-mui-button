@@ -3,7 +3,7 @@
     "alwaysStrict": true,
     "esModuleInterop": true,
     "isolatedModules": false,
-    "jsx": "preserve",
+    "jsx": "react",
     "lib": [
       "dom",
       "es2017"

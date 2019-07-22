@@ -11,15 +11,15 @@ This package provides modern gradient colors button components based on [Materia
 ## Install
 
 ```bash
-npm i '@iktakahiro/material-gradient-button'
+npm i '@iktakahiro/gradient-mui-button'
 
-yarn add '@iktakahiro/material-gradient-button'
+yarn add '@iktakahiro/gradient-mui-button'
 ```
 
 ## Usage
 
 ```tsx
-import { ContainedButton } from 'material-gradient-button'
+import { ContainedButton } from '@iktakahiro/gradient-mui-button'
 
 const MyComponent = () => {
     return (
