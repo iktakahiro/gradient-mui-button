@@ -1,6 +1,6 @@
 {
   "name": "@iktakahiro/gradient-mui-button",
-  "version": "0.9.3",
+  "version": "0.9.4",
   "description": "A Material-UI based modern gradient colors button component",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
