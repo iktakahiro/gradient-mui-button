@@ -1,33 +1,33 @@
 {
-  "compilerOptions": {
-    "alwaysStrict": true,
-    "esModuleInterop": true,
-    "isolatedModules": false,
-    "jsx": "react",
-    "lib": [
-      "dom",
-      "es2017"
-    ],
-    "module": "esnext",
-    "declaration": true,
-    "outDir": "./lib",
-    "moduleResolution": "node",
-    "noFallthroughCasesInSwitch": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noImplicitAny": false,
-    "strict": true,
-    "target": "esnext",
-    "skipLibCheck": true,
-    "forceConsistentCasingInFileNames": true
-  },
-  "include": [
-    "src/**/*.ts",
-    "src/**/*.tsx"
-  ],
-  "exclude": [
-    "node_modules",
-    "lib",
-    "src/sample-theme.ts",
-  ]
+	"compilerOptions": {
+		"alwaysStrict": true,
+		"esModuleInterop": true,
+		"isolatedModules": false,
+		"jsx": "react",
+		"lib": [
+			"dom",
+			"es2017"
+		],
+		"module": "esnext",
+		"declaration": true,
+		"outDir": "./lib",
+		"moduleResolution": "node",
+		"noFallthroughCasesInSwitch": true,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"noImplicitAny": false,
+		"strict": true,
+		"target": "esnext",
+		"skipLibCheck": true,
+		"forceConsistentCasingInFileNames": true
+	},
+	"include": [
+		"src/**/*.ts",
+		"src/**/*.tsx"
+	],
+	"exclude": [
+		"node_modules",
+		"lib",
+		"src/sample-theme.ts"
+	]
 }
