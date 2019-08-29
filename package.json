@@ -36,7 +36,7 @@
     "@types/jest": "^24.0.18",
     "@types/node": "^12.7.2",
     "@types/react": "^16.9.2",
-    "@typescript-eslint/eslint-plugin": "2.0.1-alpha.24",
+    "@typescript-eslint/eslint-plugin": "2.0.1-alpha.26",
     "@typescript-eslint/parser": "^2.0.0",
     "babel-loader": "^8.0.6",
     "docz": "^1.2.0",
